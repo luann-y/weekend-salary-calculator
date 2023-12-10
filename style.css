@@ -25,3 +25,7 @@
     background-color: teal;
     color: white;
 }
+
+.over-budget {
+    color: red;
+}
