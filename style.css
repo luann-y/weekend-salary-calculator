@@ -29,3 +29,8 @@
 .over-budget {
     color: red;
 }
+
+footer {
+    text-align: right;
+    font-size: 20pt;
+}
