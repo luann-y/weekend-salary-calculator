@@ -2,7 +2,7 @@ console.log('hello world');
 
 function submitForm(event) {
     console.log('submitForm');
-    // Stop the page from refreshing
+    // Stop the page from refreshing. Usually on submit, pages refresh. 
     event.preventDefault();
 
     // assigning my employeeData Input in HTML to my variable element
@@ -84,9 +84,12 @@ function updateTotalMonthlySalary() {
     // Update the content of the 'totalMonthly' div
     let totalMonthlyTable = document.getElementById('totalMonthly');
     totalMonthlyTable.innerHTML = totalMonthlySalary.toFixed(2); //Makes sure to move over 2 digits after decimal point. Number gets converted to a string.
+    //Side note, use parseFloat(string) to convert string to a floating point (has floating decimal used for decimals vs whole integers). ie parseFloat('4.21') outputs 4.21.
+    // ParseInt is used when working with whole numbers and wanting to remove decimal part ie parseInt('39.25') outputs 39.
 
 
-    // Check if the total monthly salary exceeds $20,000 and apply the 'over-budget' class to the footer
+    // Checking if the total monthly salary exceeds $20,000.
+    // apply the 'over-budget' class to the footer
 let footer = document.querySelector('footer');
 
 if (totalMonthlySalary > 20000) {

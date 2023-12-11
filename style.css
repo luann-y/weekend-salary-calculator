@@ -1,3 +1,16 @@
+body {
+    background-color: #faf3dd;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main {
+    background-color: #c8d5b9;
+}
+
 #employees {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -11,7 +24,7 @@
 }
 
 #employees  tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #8fc0a9;
 }
 
 #employees  tr:hover {
@@ -22,15 +35,35 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: teal;
-    color: white;
+    background-color: #ccd5ae;
+    color: #4a7c59;
 }
 
 .over-budget {
     color: red;
 }
 
-footer {
+#footer {
     text-align: right;
     font-size: 20pt;
+    color:#4a7c59
+}
+
+#pageTitle {
+    background-color: #4a7c59;
+    margin-bottom: 0%;
+    color: white;
+    padding: 10px 20px;
+}
+
+#employees {
+    background-color: #e9edc9;
+    margin-bottom: 0%;
+    color: #68b0ab;
+}
+
+#addEmployee {
+    background-color: #68b0ab;
+    margin-top: 0%;
+    color: white;
 }

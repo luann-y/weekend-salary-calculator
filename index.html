@@ -7,11 +7,11 @@
 </head>
 <body>
   <header>
-    <h1>Salary Calculator</h1>
+    <h1 id="pageTitle">Salary Calculator</h1>
   </header>
   <main>
     <div id="content">
-    <h2>Add Employee</h2>
+    <h2 id="addEmployee">Add Employee</h2> <!--My Form with areas for user input and submit button-->
     <form id="employeeDataInput" onsubmit="submitForm(event)"data-testid="employeeForm">
       First Name: <input id="firstNameInput" data-testid="firstNameInput" type="text" />
       Last Name: <input id="lastNameInput" data-testid="lastNameInput" type="text" />
@@ -22,7 +22,7 @@
         Submit
       </button>
     </form>
-    <h2>Employees</h2>
+    <h2 id="employees">Employees</h2>
     <table id="employees">
       <thead>
           <tr>
@@ -39,7 +39,7 @@
           </table>
         </div>
   </main>
-  <footer>
+  <footer id="footer">
     <p>Total Monthly</p>
     <div id="totalMonthly"></div>
 </footer>
