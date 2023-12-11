@@ -25,6 +25,7 @@ main {
 
 #employees  tr:nth-child(even) {
     background-color: #8fc0a9;
+    color: white;
 }
 
 #employees  tr:hover {
